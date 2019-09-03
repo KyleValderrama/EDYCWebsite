@@ -1,8 +1,12 @@
 <template>
     <div>
         <div id="nav">
+            <router-link id = "headerlogo" class = "link" to="/"><img src="../../assets/edycheader-01.svg" alt=""></router-link>
             <router-link class = "link" to="/">Home</router-link>
             <router-link class = "link" to="/about">About</router-link>
+            <router-link class = "link" to="/products">Products</router-link>
+            <router-link class = "link" to="/company">Company</router-link>
+            <router-link class = "link" to="/services">Services</router-link>
         </div>
     </div>
 </template>
@@ -17,17 +21,27 @@ export default {
     #nav
     {
       font-family: "Helvetica Neue";
-      font-weight: 100;   
-      font-size: 12px;
+      position:absolute;
+      font-weight: 300;        
+      font-size: 15px;
       text-decoration: none;
       width: 100;
       padding: 20px;
-      background: #303030;
+    }
+    #headerlogo img
+    {
+        height: 25px;
+        position: absolute;
     }
     .link
     {
-        padding:0 30px;
-        color: white;
+        padding:0 50px;
+        color:#919191;
         text-decoration: none;
+        transition: .4s;
+    }
+    .link:hover
+    {
+        color:#303030;
     }
 </style>
