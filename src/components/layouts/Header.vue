@@ -25,8 +25,9 @@ export default {
       font-weight: 300;        
       font-size: 15px;
       text-decoration: none;
-      width: 100;
-      padding: 20px;
+      width: 100%;
+      padding: 20px 20px 20px 20px;
+
     }
     #headerlogo img
     {
@@ -35,13 +36,14 @@ export default {
     }
     .link
     {
-        padding:0 50px;
-        color:#919191;
+        padding:20px 50px 20px 50px;
+        color:#585858;
         text-decoration: none;
         transition: .4s;
+        
     }
     .link:hover
     {
-        color:#303030;
+        color: #080808;
     }
 </style>
